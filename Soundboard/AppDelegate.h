@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WelcomeViewController.h"
+#import "MasterViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) UINavigationController *navigationController;
 
+//@property (strong, nonatomic) WelcomeViewController *welcomeViewController;
 @end

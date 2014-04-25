@@ -7,14 +7,22 @@
 //
 
 #import "AppDelegate.h"
+#import "WelcomeViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+//    self.welcomeViewController = [[WelcomeViewController alloc] initWithNibName:@"WelcomeViewController" bundle:nil];
+//    
+//    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.welcomeViewController];
+//    self.navigationController.delegate = self;
+    self.window.rootViewController = [[MasterViewController alloc] init];
+    
+    self.window.backgroundColor = [UIColor clearColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -44,6 +52,12 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (NSUInteger)application:(UIApplication*)application
+supportedInterfaceOrientationsForWindow:(UIWindow*)window
+{
+    return (UIInterfaceOrientationMaskLandscape);
 }
 
 @end

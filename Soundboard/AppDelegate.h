@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WelcomeViewController.h"
 #import "MasterViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UINavigationControllerDelegate>

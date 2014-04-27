@@ -136,7 +136,7 @@
 - (void)broadCastNumber:(BoardButton*)sender
 {
 	NSLog(@"COCK");
-	[self.fm sendNumber:[NSNumber numberWithInteger:[sender ButtonID]]];
+	[self.fm sendMessage:[NSString stringWithFormat:@"%i", [sender ButtonID]]];
 }
 
 /*

@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "WelcomeViewController.h"
 
 @implementation AppDelegate
 
